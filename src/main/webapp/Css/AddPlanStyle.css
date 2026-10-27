@@ -1,0 +1,172 @@
+/* ==========================================================================
+   PLAN FORM (CREATE & EDIT) STYLES
+   ========================================================================== */
+
+.form-wrapper {
+    max-width: 580px;
+    margin: 20px auto 40px;
+}
+
+.plan-form-card {
+    background: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: 36px 32px;
+}
+
+.form-header-box {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.form-header-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--primary-50);
+    border: 1px solid var(--primary-200);
+    color: var(--primary-700);
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.form-header-box h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--text-main);
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+}
+
+.form-header-box p {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+/* Form Layout */
+.plan-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+}
+
+.form-field label {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.field-input-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.field-prefix {
+    position: absolute;
+    left: 14px;
+    font-weight: 700;
+    color: var(--text-muted);
+    font-size: 15px;
+    pointer-events: none;
+}
+
+.field-select, .field-input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    font-family: inherit;
+    font-size: 15px;
+    color: var(--text-main);
+    background: #ffffff;
+    transition: var(--transition);
+    outline: none;
+}
+
+.field-input.has-prefix {
+    padding-left: 32px;
+}
+
+.field-select:focus, .field-input:focus {
+    border-color: var(--primary-500);
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+}
+
+/* Live Calculator Preview Box */
+.calc-preview-card {
+    background: linear-gradient(135deg, var(--primary-50) 0%, #f0fdf4 100%);
+    border: 1px solid var(--primary-200);
+    border-radius: var(--radius-md);
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.calc-preview-label {
+    display: flex;
+    flex-direction: column;
+}
+
+.calc-preview-label span:first-child {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary-800);
+    letter-spacing: 0.05em;
+}
+
+.calc-preview-label span:last-child {
+    font-size: 12px;
+    color: var(--primary-700);
+}
+
+.calc-preview-value {
+    font-family: 'Outfit', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--primary-800);
+}
+
+/* Buttons in Form */
+.form-buttons-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.form-buttons-row .btn {
+    flex: 1;
+    padding: 14px;
+    font-size: 15px;
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}

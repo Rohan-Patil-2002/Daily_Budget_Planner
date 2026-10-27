@@ -1,0 +1,21 @@
+# Maven build target
+target/
+
+# Compiled Java class files
+*.class
+src/main/webapp/WEB-INF/classes/
+
+# Eclipse workspace metadata (created if project directory is opened as workspace)
+.metadata/
+*.log
+*.lock
+
+# Environment and sensitive configuration
+.env
+.env.*
+*.local
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+.DS_Store

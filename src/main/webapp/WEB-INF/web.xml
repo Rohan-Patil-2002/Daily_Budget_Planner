@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+
+	<display-name>Daily Budget Planner</display-name>
+
+	<!-- Login Servlet -->
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.jsp.Servlets.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<!-- Register Servlet -->
+	<servlet>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>com.jsp.Servlets.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+
+	<!-- Logout Servlet -->
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>com.jsp.Servlets.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+
+	<!-- Dashboard Servlet -->
+	<servlet>
+		<servlet-name>DashboardServlet</servlet-name>
+		<servlet-class>com.jsp.Servlets.DashboardServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DashboardServlet</servlet-name>
+		<url-pattern>/dashboard</url-pattern>
+	</servlet-mapping>
+
+	<!-- Menu Servlet -->
+	<servlet>
+		<servlet-name>MenuServlet</servlet-name>
+		<servlet-class>com.jsp.Servlets.MenuServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MenuServlet</servlet-name>
+		<url-pattern>/menu</url-pattern>
+	</servlet-mapping>
+
+	<!-- Add Plan Servlet -->
+	<servlet>
+		<servlet-name>AddPlanServlet</servlet-name>
+		<servlet-class>com.jsp.Servlets.AddPlanServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddPlanServlet</servlet-name>
+		<url-pattern>/addPlan</url-pattern>
+	</servlet-mapping>
+
+	<!-- Update Plan Servlet -->
+	<servlet>
+		<servlet-name>UpdatePlanServlet</servlet-name>
+		<servlet-class>com.jsp.Servlets.UpdatePlanServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdatePlanServlet</servlet-name>
+		<url-pattern>/updatePlan</url-pattern>
+	</servlet-mapping>
+
+	<!-- Delete Plan Servlet -->
+	<servlet>
+		<servlet-name>DeletePlanServlet</servlet-name>
+		<servlet-class>com.jsp.Servlets.DeletePlanServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeletePlanServlet</servlet-name>
+		<url-pattern>/deletePlan</url-pattern>
+	</servlet-mapping>
+
+	<!-- Spend Amount Servlet -->
+	<servlet>
+		<servlet-name>SpendAmountServlet</servlet-name>
+		<servlet-class>com.jsp.Servlets.SpendAmountServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SpendAmountServlet</servlet-name>
+		<url-pattern>/SpendAmountServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SpendAmountServlet</servlet-name>
+		<url-pattern>/spendAmount</url-pattern>
+	</servlet-mapping>
+
+	<!-- History Servlet -->
+	<servlet>
+		<servlet-name>HistoryServlet</servlet-name>
+		<servlet-class>com.jsp.Servlets.HistoryServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HistoryServlet</servlet-name>
+		<url-pattern>/history</url-pattern>
+	</servlet-mapping>
+
+	<!-- Welcome File List -->
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!-- Session Configuration with HttpOnly Cookie Security -->
+	<session-config>
+		<session-timeout>30</session-timeout>
+		<cookie-config>
+			<http-only>true</http-only>
+		</cookie-config>
+		<tracking-mode>COOKIE</tracking-mode>
+	</session-config>
+
+	<!-- Error Page Handling -->
+	<error-page>
+		<error-code>404</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+
+</web-app>

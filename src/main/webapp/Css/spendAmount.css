@@ -1,0 +1,259 @@
+/* ==========================================================================
+   DAILY SPEND ENTRY PAGE STYLES
+   ========================================================================== */
+
+.spend-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 960px;
+    margin: 20px auto 40px;
+    align-items: start;
+}
+
+/* Left: Plan Summary Card */
+.spend-summary-card {
+    background: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.summary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.summary-plan-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--text-main);
+}
+
+/* Balance Hero Widget */
+.balance-widget {
+    background: linear-gradient(135deg, #064e3b 0%, #047857 60%, #059669 100%);
+    border-radius: var(--radius-md);
+    padding: 24px;
+    color: #ffffff;
+    box-shadow: 0 10px 20px rgba(6, 78, 59, 0.2);
+}
+
+.balance-label {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary-200);
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+}
+
+.balance-amount {
+    font-family: 'Outfit', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 12px;
+}
+
+.balance-stats-sub {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 13px;
+}
+
+.balance-sub-item span:first-child {
+    display: block;
+    color: var(--primary-200);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.balance-sub-item span:last-child {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/* Key Tips Box */
+.tips-box {
+    background: var(--bg-surface-alt);
+    border-radius: var(--radius-md);
+    padding: 16px 20px;
+    border: 1px solid var(--border-light);
+}
+
+.tips-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 6px;
+}
+
+.tips-text {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+/* Right: Spend Form Card */
+.spend-form-card {
+    background: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: 32px 28px;
+}
+
+.spend-form-header {
+    margin-bottom: 24px;
+}
+
+.spend-form-header h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--text-main);
+    letter-spacing: -0.02em;
+    margin-bottom: 4px;
+}
+
+.spend-form-header p {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.spend-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.field-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Quick Amount Chips */
+.chips-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-top: 6px;
+    letter-spacing: 0.05em;
+}
+
+.chips-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+.chip-btn {
+    background: var(--bg-surface-alt);
+    border: 1px solid var(--border-light);
+    color: var(--text-main);
+    padding: 5px 10px;
+    border-radius: var(--radius-sm);
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.chip-btn:hover {
+    background: var(--primary-50);
+    border-color: var(--primary-300);
+    color: var(--primary-700);
+}
+
+/* Action Buttons */
+.spend-actions-row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn-record-spend {
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.btn-skip-day {
+    width: 100%;
+    background: #eef2ff;
+    color: var(--indigo-600);
+    border: 1.5px solid #c7d2fe;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-skip-day:hover {
+    background: #e0e7ff;
+    border-color: var(--indigo-500);
+}
+
+.nav-links-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-light);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.nav-links-row a {
+    color: var(--primary-600);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.nav-links-row a:hover {
+    color: var(--primary-800);
+    text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+    .spend-layout {
+        grid-template-columns: 1fr;
+    }
+}
